@@ -57,7 +57,7 @@ jobs:
         env:
           YOUTH_READ: ${{ secrets.YOUTH_READ4 }}
           
-          - name: '运行 【中青看点自动阅读五】'
+      - name: '运行 【中青看点自动阅读五】'
         if: env.YOUTH_READ3
         run: |
           node Task/Youth_Read.js
